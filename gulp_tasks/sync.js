@@ -15,7 +15,7 @@ gulp.task('sync:fonts', function() {
 gulp.task('sync:helpers', function() {
 	return gulp.src([
 		paths.dev.helpers + '/**/',
-		paths.dev.helpers + '/.htaccess'
+		//paths.dev.helpers + '/.htaccess'
 	], {base: paths.dev.helpers})
 		.pipe(plumber())
 		.pipe(gulp.dest(paths.build.main));
