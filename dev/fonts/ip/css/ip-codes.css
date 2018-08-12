@@ -16,13 +16,11 @@
 .icon-lifebuoy:before { content: '\e80e'; } /* '' */
 .icon-chart-line:before { content: '\e80f'; } /* '' */
 .icon-rocket:before { content: '\e810'; } /* '' */
-.icon-facebook:before { content: '\e811'; } /* '' */
-.icon-twitter:before { content: '\e812'; } /* '' */
-.icon-gplus:before { content: '\e813'; } /* '' */
-.icon-vkontakte:before { content: '\e814'; } /* '' */
+.icon-globe:before { content: '\e811'; } /* '' */
 .icon-linkedin:before { content: '\e815'; } /* '' */
 .icon-rss:before { content: '\e816'; } /* '' */
 .icon-angle-double-up:before { content: '\e817'; } /* '' */
 .icon-angle-double-down:before { content: '\e818'; } /* '' */
 .icon-link:before { content: '\e819'; } /* '' */
 .icon-phone:before { content: '\e81a'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
