@@ -1,10 +1,10 @@
 {
 	"site": {
-		"lang": "en",
-		"title": "Portfolio template",
+		"lang": "fr",
+		"title": "Jérôme Skoda Portfolio",
 		"titleDelim": " | ",
-		"description": "Free responsive one page portfolio template",
-		"keywords": "html template, theme, freebie, opensource",
+		"description": "",
+		"keywords": "Jerome Skoda, portfolio",
 		"url": "https://github.com/website-templates/portfolio_one-page-template"
 	},
 	"modules": {
