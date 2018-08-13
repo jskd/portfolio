@@ -1,0 +1,62 @@
+
+$icons: (
+  research \e80b,
+  strategy \e807,
+  improve \e80f,
+  plan \e80c,
+  recover \e80a,
+  support \e80e,
+  develop \e808,
+  deploy \e80d,
+  deliver \e810,
+  gotop \e817,
+  gonext \e818,
+  fb \e811,
+  twi \e812,
+  gplus \e813,
+  vk \e814,
+  in \e815,
+  rss \e816,
+  mail \e800,
+  location \e806,
+  ql \e804,
+  qr \e805,
+  link \e819,
+  phone \e81a,
+  github \f113,
+  globe \e811
+);
+
+.icon {
+	&:before {
+		font-family: "ip";
+		font-style: normal;
+		font-weight: normal;
+  }
+	&_menu {
+		&:before {
+			content: "\e801";
+    }
+		&.is-closed:before {
+			content: "\e809";
+    }
+  }
+	&_spoiler {
+		&.is-opened:before {
+			content: "\e803";
+    }
+		&.is-closed:before {
+			content: "\e802";
+    }
+  }
+	@function unicode($str) {
+		@return unquote("\"") + $str + unquote("\"")
+  }
+	@each $icon in $icons {
+		&_#{nth($icon, 1)} {
+			&:before {
+				content: unicode(nth($icon, 2));
+      }
+    }
+  }
+}
