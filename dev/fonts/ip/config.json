@@ -7,12 +7,6 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
-      "css": "search",
-      "code": 59403,
-      "src": "fontawesome"
-    },
-    {
       "uid": "bf882b30900da12fca090d9796bc3030",
       "css": "mail",
       "code": 59392,
@@ -154,6 +148,30 @@
       "uid": "197375a3cea8cb90b02d06e4ddf1433d",
       "css": "globe",
       "code": 59409,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "05417ae0104ab18a0fe454358579a987",
+      "css": "art-gallery",
+      "code": 59410,
+      "src": "maki"
+    },
+    {
+      "uid": "020dbfb0a5a4a25775bc751e5891e161",
+      "css": "college",
+      "code": 59411,
+      "src": "maki"
+    },
+    {
+      "uid": "9725db89b610135dc76cd8a21afffa83",
+      "css": "search",
+      "code": 59403,
+      "src": "linecons"
+    },
+    {
+      "uid": "dcedf50ab1ede3283d7a6c70e2fe32f3",
+      "css": "chat",
+      "code": 59412,
       "src": "fontawesome"
     }
   ]
