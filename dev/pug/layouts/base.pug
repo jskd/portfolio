@@ -12,22 +12,32 @@ block variables
 
 doctype html
 html(lang= pageLang ? pageLang : config.site.lang)
-	head
-		//- Meta information
-		+head-meta()
+  head
+    //- Meta information
+    +head-meta()
 
-		//- Head external resources
-		+head-src()
+    //- Head external resources
+    +head-src()
 
-		//- Include page specific content
-		block head-content
+    //- Include page specific content
+    block head-content
 
-	body
-		//- Page preloader js
-		+progress()
+  body
+    //- Page preloader js
+    +progress()
 
-		//- Include page specific content
-		block body-content
+    //- Include page specific content
+    block body-content
 
-		//- Body assets
-		+body-src()
+    //- Body assets
+    +body-src()
+    
+    script
+      | $(document).ready(function () {
+      | var modal = $('#modal').iziModal();
+      | $(document).on('click', '.trigger', function (event) {
+      |   event.preventDefault();
+      |   // $('#modal').iziModal('setZindex', 99999);
+      |   // $('#modal').iziModal('open', { zindex: 99999 });
+      |   $('#modal').iziModal('open');
+      | });});
