@@ -31,13 +31,83 @@ html(lang= pageLang ? pageLang : config.site.lang)
 
     //- Body assets
     +body-src()
-    
-    script
-      | $(document).ready(function () {
-      | var modal = $('#modal').iziModal();
-      | $(document).on('click', '.trigger', function (event) {
-      |   event.preventDefault();
-      |   // $('#modal').iziModal('setZindex', 99999);
-      |   // $('#modal').iziModal('open', { zindex: 99999 });
-      |   $('#modal').iziModal('open');
-      | });});
+
+    div#igosat.iziModal(data-iziModal-title="IGOSat")
+      p Collaboration bénévole développement C
+      p Juin - Juillet 2017
+      p Theme: Systéme embarqué
+      p Environnement: STM32F4xx (ARM Cortex-M4)
+      p Langage: C
+      p Logiciel et bibliothèque: FreeRTOS, Make, GCC (Bare-metal toolchain) et GDB
+      h4 Introduction
+      p 
+        | IGOSat (Ionospheric &amp; Gamma-ray Observations SATellite) est le projet de CubeSat de l’Université Paris Diderot,
+        | Il embarque 2 charges utiles (un récepteur GPS et un scintillateur) sur une orbite quasi-polaire à environ 650km d’altitude.
+        | Ses objectifs:
+        | Etudier le contenu électronique de la Ionosphère 
+        | Détecter les rayons gamma et les électrons au dessus des pôles et de l’anomalie Atlantique Sud
+        
+      h4 Ma contribution
+      p Retour d'expérience de mes autres contribution sur projets de cubesat
+      p Mise en place d'une chaine de compilation complète basé sur Make et GCC 
+        | (Bare-metal toolchain) pour obtenir une maîtrise de complète du processus de compilation.
+      p Soutiens du développement logiciel de vol d'IGOSat
+        
+      button(data-izimodal-open="#qb50") Précedent
+      button(data-izimodal-open="#qb50") Suivant
+
+    div#qb50.iziModal(data-iziModal-title="QB50")
+      p Stage de développement C++
+      p Avril - Juillet 2015
+      p Theme: Systéme embarqué
+      p Environnement: STM32F4xx (ARM Cortex-M4)
+      p Langage: C++
+      p Logiciel et bibliothèque: FreeRTOS, Make, GCC (Bare-metal toolchain) et GDB
+      h4 Introduction
+      p Initié en 2011 par le Von Karman Institute, le projet QB50 vise à lancer
+        | un essaim de 50 cubesat autour de la Terre. Libéré à 380 km d'altitude, 
+        | ils étudieront la couche inférieure de la thermosphère.
+        | X-CubeSat (de l'école Polytechnique) et SpaceCube (MINES ParisTech) 
+        | sont deux cubesat du projet QB50. Ils ont été mis en orbite en 
+        | mai 2017 et mesure actuellement  la concentration en oxygène 
+        | monoatomique dans la thermosphère à 
+        | l'aide d'une sonde FIPEX fournie par le Von Karman Institute.
+        
+      h4 Ma contribution
+      p Implémentation logicielle en C++ du protocole AX.25 permettant de 
+        | transmettre les télémesures du satellite vers la station sol.
+      p Conception d’une interface de test embarqués avec outils de vérification 
+        | de l'état de la mémoire et surveillance des capteurs
+      
+      button(data-izimodal-open="#igosat") Précedent
+      button(data-izimodal-open="#igosat") Suivant
+      
+    div#eyesat.iziModal(data-iziModal-title="EyeSat")
+      p Stage de développement VHDL et C++
+      p Avril - Juillet 2016
+      p Projet universitaire
+      p Octobre 2014 - Avril 2015
+      p Theme: Electronique et Systéme embarqué
+      p Environnement: FPGA (Cyclone II d'Altera)
+      p Langage: VHDL, Verilog, C++, Python 
+      p Logiciel: Quartus II, Altium Designer, LabVIEW
+      p Technique: Co-Design, test automatisé
+      h4 Introduction
+      p EyeSat est un triple cubesat développé par des étudiants pour une 
+        | mission d’astronomie. Ce nanosatellite a pour objectif l’étude de 
+        | la lumière zodiacale, un reflet des rayons du Soleil sur des 
+        | particules de poussière présente dans l’espace interplanétaire.
+        | C’est la première mission dédiée à l’étude de la lumière zodiacale 
+        | qui utilise un capteur d’image couleur CMOS (et non CCD) une 
+        | technologie qui n’a encore jamais été utilisé dans une caméra spatiale embarqué.
+      h4 Ma contribution
+      p Réalisation d’un prototype de caméra spatiale: 
+        | Conception du PCB suportant le capteur d’image avec Altium Designer; 
+        | Programmation d’un FPGA (Cyclone II d’Altera) en co-design VHDL/C++ dialoguant avec le capteur
+        | Réalisation d’une interface de récupération des informations récupéré du capteur sur ordinateur
+      p Implémentation de script de test en Python
+      
+      button(data-izimodal-open="#igosat") Précedent
+      button(data-izimodal-open="#igosat") Suivant
+      
+    script $('.iziModal').iziModal();

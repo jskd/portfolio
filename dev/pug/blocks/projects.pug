@@ -1,40 +1,69 @@
 mixin projects()
-	section#projects.common-section
-		header.common-section__header
-			h2 Projets
+  section#projects.common-section
+    header.common-section__header
+      h2 Projets
+      p Quelques-uns de mes projets réalisé dans un cadre professionnel, 
+        | lors de hackathons ou pendant mon temps libre.
+        
+        
+        
 
-		.projects-wrap
-			.grid-container
-				.projects
-					figure.projects__item
-						img(src="static/images/projects/igosat.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					figure.projects__item
-						img(src="static/images/projects/qb50.jpg" alt="Donec lobortis, est iaculis rutrum feugiat")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Donec lobortis, est iaculis rutrum feugiat
-					figure.projects__item
-						img(src="static/images/projects/eyesat.jpg" alt="Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi
-					figure.projects__item
-						img(src="static/images/projects/osm.jpg" alt="Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi
-					figure.projects__item
-						img(src="static/images/projects/vempiro.jpg" alt="Mauris a sem semper, maximus metus vitae, efficitur turpis")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Mauris a sem semper, maximus metus vitae, efficitur turpis
-					figure.projects__item
-						img(src="static/images/projects/conduit.jpg" alt="Nunc sit amet massa id sem pretium luctus")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Nunc sit amet massa id sem pretium luctus
-					figure.projects__item
-						img(src="static/images/projects/lsf.jpg" alt="Nunc elementum arcu sit amet erat sodales fringilla")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Nunc elementum arcu sit amet erat sodales fringilla
-					figure.projects__item
-						img(src="static/images/projects/ariane6.jpg" alt="Cras condimentum venenatis aliquet")
-						figcaption
-							a.icon.icon_link(href="#" rel="nofollow") Cras condimentum venenatis aliquet
+    .projects-wrap
+      .grid-container
+        .projects
+          
+          figure.projects__item(data-izimodal-open="#igosat")
+            img(src="static/images/projects/igosat.jpg" alt="IGOSat")
+            figcaption
+              div
+                h3 IGOSat
+                p En savoir plus
+    
+          figure.projects__item(data-izimodal-open="#qb50")
+            img(src="static/images/projects/qb50.jpg" alt="QB50 (X-CubeSat et SpaceCube)")
+            figcaption
+              div
+                h3 QB50 (X-CubeSat et SpaceCube)
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#eyesat")
+            img(src="static/images/projects/eyesat.jpg" alt="EyeSat")
+            figcaption
+              div
+                h3 EyeSat
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#osm")
+            img(src="static/images/projects/osm.jpg" alt="OpenStreetMap render")
+            figcaption
+              div
+                h3 OpenStreetMap render
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#vempiro")
+            img(src="static/images/projects/vempiro.jpg" alt="Pistolero vs Vampiros")
+            figcaption
+              div
+                h3 Pistolero vs Vampiros
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#conduit")
+            img(src="static/images/projects/conduit.jpg" alt="Conduct.h")
+            figcaption
+              div
+                h3 Conduct.h
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#lsf")
+            img(src="static/images/projects/lsf.jpg" alt="Dictionnaire de la Langue des signes française")
+            figcaption
+              div
+                h3 Dictionnaire de la Langue des signes française
+                p En savoir plus
+                
+          figure.projects__item(data-izimodal-open="#ariane6")
+            img(src="static/images/projects/ariane6.jpg" alt="Ariane 6 - Automatisation du processus de préparation des missions")
+            figcaption
+              div
+                h3 Ariane 6 - Automatisation du processus de préparation des missions
+                p En savoir plus
