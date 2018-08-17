@@ -9,9 +9,13 @@ mixin projects()
       .grid-container
         .projects
           each project in projects.list 
-            figure.projects__item(data-izimodal-open=project.id)
+            figure.projects__item(data-izimodal-open="#"+project.id)
               img(src=project.vignette alt=project.title)
               figcaption
                 div
                   h3= project.title
                   p En savoir plus
+          
+          each project in projects.list 
+            div.iziModal(data-iziModal-title=project.title id=project.id)
+              +modals(project.id)
