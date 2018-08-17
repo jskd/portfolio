@@ -62,7 +62,7 @@ html(lang= pageLang ? pageLang : config.site.lang)
       p Theme: Systéme embarqué
       p Environnement: STM32F4xx (ARM Cortex-M4)
       p Langage: C++
-      p Logiciel et bibliothèque: FreeRTOS, Make, GCC (Bare-metal toolchain) et GDB
+      p Logiciel et bibliothèque: FreeRTOS, Git, Make, GCC (Bare-metal toolchain) et GDB
       h4 Introduction
       p Initié en 2011 par le Von Karman Institute, le projet QB50 vise à lancer
         | un essaim de 50 cubesat autour de la Terre. Libéré à 380 km d'altitude, 
@@ -77,7 +77,7 @@ html(lang= pageLang ? pageLang : config.site.lang)
       p Implémentation logicielle en C++ du protocole AX.25 permettant de 
         | transmettre les télémesures du satellite vers la station sol.
       p Conception d’une interface de test embarqués avec outils de vérification 
-        | de l'état de la mémoire et surveillance des capteurs
+        | de l'état de la mémoire et monitoring des capteurs
       
       button(data-izimodal-open="#igosat") Précedent
       button(data-izimodal-open="#igosat") Suivant
@@ -90,7 +90,7 @@ html(lang= pageLang ? pageLang : config.site.lang)
       p Theme: Electronique et Systéme embarqué
       p Environnement: FPGA (Cyclone II d'Altera)
       p Langage: VHDL, Verilog, C++, Python 
-      p Logiciel: Quartus II, Altium Designer, LabVIEW
+      p Logiciel: Quartus II, Altium Designer, LabVIEW, Git
       p Technique: Co-Design, test automatisé
       h4 Introduction
       p EyeSat est un triple cubesat développé par des étudiants pour une 
@@ -110,4 +110,23 @@ html(lang= pageLang ? pageLang : config.site.lang)
       button(data-izimodal-open="#igosat") Précedent
       button(data-izimodal-open="#igosat") Suivant
       
+    div#osm.iziModal(data-iziModal-title="OpenStreetMap Render")
+      p Projet universitaire
+      p Janvier 2016 - Avril 2016
+      p Theme: Application
+      p Environnement: GNU/Linux
+      p Langage: C
+      p Bibliothéque: libsdl2, libxml2
+      p Logiciel: Git, Make, GCC, GDB
+      h4 Le projet
+      p OpenStreetMap Render est une application permettant de visualiser 
+        | les cartes disponible dans la base de donnée libre d'OpenStreetMap. 
+        | Cette application prend en entrée une carte sous format OSM XML puis 
+        | l'affiche avec tous les élements reconnus par l'application 
+        | comme par exemple les routes, bâtiments, forêt 
+        | ainsi que les icones associers lieux particulier.
+
+      button(data-izimodal-open="#igosat") Précedent
+      button(data-izimodal-open="#igosat") Suivant
+          
     script $('.iziModal').iziModal( {headerColor: null, padding: null});
