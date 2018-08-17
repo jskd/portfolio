@@ -4,66 +4,14 @@ mixin projects()
       h2 Projets
       p Quelques-uns de mes projets réalisé dans un cadre professionnel, 
         | lors de hackathons ou pendant mon temps libre.
-        
-        
-        
 
     .projects-wrap
       .grid-container
         .projects
-          
-          figure.projects__item(data-izimodal-open="#igosat")
-            img(src="static/images/projects/igosat.jpg" alt="IGOSat")
-            figcaption
-              div
-                h3 IGOSat
-                p En savoir plus
-    
-          figure.projects__item(data-izimodal-open="#qb50")
-            img(src="static/images/projects/qb50.jpg" alt="QB50 (X-CubeSat et SpaceCube)")
-            figcaption
-              div
-                h3 QB50 (X-CubeSat et SpaceCube)
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#eyesat")
-            img(src="static/images/projects/eyesat.jpg" alt="EyeSat")
-            figcaption
-              div
-                h3 EyeSat
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#osm")
-            img(src="static/images/projects/osm.jpg" alt="OpenStreetMap render")
-            figcaption
-              div
-                h3 OpenStreetMap render
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#vempiro")
-            img(src="static/images/projects/vempiro.jpg" alt="Pistolero vs Vampiros")
-            figcaption
-              div
-                h3 Pistolero vs Vampiros
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#conduit")
-            img(src="static/images/projects/conduit.jpg" alt="Conduct.h")
-            figcaption
-              div
-                h3 Conduct.h
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#lsf")
-            img(src="static/images/projects/lsf.jpg" alt="Dictionnaire de la Langue des signes française")
-            figcaption
-              div
-                h3 Dictionnaire de la Langue des signes française
-                p En savoir plus
-                
-          figure.projects__item(data-izimodal-open="#ariane6")
-            img(src="static/images/projects/ariane6.jpg" alt="Ariane 6 - Automatisation du processus de préparation des missions")
-            figcaption
-              div
-                h3 Ariane 6 - Automatisation du processus de préparation des missions
-                p En savoir plus
+          each project in projects.list 
+            figure.projects__item(data-izimodal-open=project.id)
+              img(src=project.vignette alt=project.title)
+              figcaption
+                div
+                  h3= project.title
+                  p En savoir plus

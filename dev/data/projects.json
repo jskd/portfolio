@@ -1,0 +1,43 @@
+{
+	"list": [
+    {
+      "id": "#ariane6",
+      "vignette": "static/images/projects/ariane6.jpg",
+      "title": "Ariane 6 - Automatisation du processus de préparation des missions"
+    },
+    {
+      "id": "#vempiro",
+      "vignette": "static/images/projects/vempiro.jpg",
+      "title": "Pistolero vs Vampiros"
+    },
+    {
+      "id": "#qb50",
+      "vignette": "static/images/projects/qb50.jpg",
+      "title": "QB50 (X-CubeSat et SpaceCube)"
+    },
+    {
+      "id": "#eyesat",
+      "vignette": "static/images/projects/eyesat.jpg",
+      "title": "EyeSat"
+    },
+    {
+      "id": "#igosat",
+      "vignette": "static/images/projects/igosat.jpg",
+      "title": "IGOSat"
+    },
+    {
+      "id": "#osm",
+      "vignette": "static/images/projects/osm.jpg",
+      "title": "OpenStreetMap render"
+    },
+    {
+      "id": "#conduit",
+      "vignette": "static/images/projects/conduit.jpg",
+      "title": "Conduct.h"
+    },
+    {
+      "id": "#lsf",
+      "vignette": "static/images/projects/lsf.jpg",
+      "title": "Dictionnaire de la Langue des Signes Française (LSF)"
+    }
+  ]}
