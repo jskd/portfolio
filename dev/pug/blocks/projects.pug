@@ -16,6 +16,6 @@ mixin projects()
                   h3= project.title
                   p En savoir plus
           
-          each project in projects.list 
-            div.iziModal(data-iziModal-title=project.title id=project.id)
-              +modals(project.id)
+  each project in projects.list 
+    div.iziModal(data-iziModal-title=project.title id=project.id data-izimodal-group="project")
+      +modals(project.id)            
