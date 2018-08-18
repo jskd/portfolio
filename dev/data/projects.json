@@ -3,7 +3,7 @@
     {
       "id": "ariane6",
       "vignette": "static/images/projects/ariane6.jpg",
-      "title": "Ariane 6 - Automatisation du processus de préparation des missions"
+      "title": "Automatisation du processus de préparation des missions"
     },
     {
       "id": "cards",
@@ -23,7 +23,7 @@
     {
       "id": "reseau-neurones",
       "vignette": "static/images/projects/reseau-neurones.jpg",
-      "title": "Réseau de neurones - classificateur d'image"
+      "title": "Réseau de neurones - Classificateur d'images"
     },
     {
       "id": "eyesat",
@@ -33,7 +33,7 @@
     {
       "id": "osm",
       "vignette": "static/images/projects/osm.jpg",
-      "title": "OpenStreetMap render"
+      "title": "OpenStreetMap Render"
     },
     {
       "id": "conduit",
@@ -48,7 +48,7 @@
     {
       "id": "bdd",
       "vignette": "static/images/projects/bdd.jpg",
-      "title": "Base de donnée en C"
+      "title": "Conception de base de données"
     },
     {
       "id": "igosat",
