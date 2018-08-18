@@ -39,5 +39,25 @@
       "id": "lsf",
       "vignette": "static/images/projects/lsf.jpg",
       "title": "Dictionnaire de la Langue des Signe Française (LSF)"
+    },
+    {
+      "id": "cards",
+      "vignette": "static/images/projects/cards.jpg",
+      "title": "Cards Save Humanity"
+    },
+    {
+      "id": "bdd",
+      "vignette": "static/images/projects/bdd.jpg",
+      "title": "Base de donnée en C"
+    },
+    {
+      "id": "reseau-neurones",
+      "vignette": "static/images/projects/reseau-neurones.jpg",
+      "title": "Réseau de neurones - classificateur d'image"
+    },
+    {
+      "id": "robot-lego",
+      "vignette": "static/images/projects/robot-lego.jpg",
+      "title": "Robot suiveur de ligne en Lego"
     }
   ]}
