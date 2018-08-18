@@ -8,17 +8,25 @@ mixin modals(id)
       p Langage: C
       p Logiciel et bibliothèque: FreeRTOS, Make, GCC (Bare-metal toolchain) et GDB
       h4 Introduction
-      p 
-        | IGOSat (Ionospheric &amp; Gamma-ray Observations SATellite) est le projet de CubeSat de l’Université Paris Diderot,
-        | Il embarque 2 charges utiles (un récepteur GPS et un scintillateur) sur une orbite quasi-polaire à environ 650km d’altitude.
-        | Ses objectifs:
-        | Etudier le contenu électronique de la Ionosphère 
-        | Détecter les rayons gamma et les électrons au dessus des pôles et de l’anomalie Atlantique Sud
+      p.
+        IGOSat (Ionospheric &amp; Gamma-ray Observations SATellite) est le 
+        projet de CubeSat de l’Université Paris Diderot.
+        Il embarque deux charges utiles (un récepteur GPS et un scintillateur) 
+        sur une orbite quasi-polaire à environ 650km d’altitude. <br/>
+        Ses objectifs:
+      ul
+        li Etudier le contenu électronique de la Ionosphère. 
+        li.
+          Détecter les rayons gamma et les électrons au dessus des pôles 
+          et de l’anomalie Atlantique Sud.
         
       h4 Ma contribution
-      p Retour d'expérience de mes autres contribution sur projets de cubesat
-      p Mise en place d'une chaine de compilation complète basé sur Make et GCC 
-        | (Bare-metal toolchain) pour obtenir une maîtrise de complète du processus de compilation.
+      p.
+        Retour d'expérience de mes autres contributions sur projets de cubesat
+      p.
+        Mise en place d'une chaine de compilation complète basé sur Make et GCC 
+        (Bare-metal toolchain) pour obtenir une maîtrise de complète du 
+        processus de compilation.
       p Soutiens du développement logiciel de vol d'IGOSat
     
     when "qb50"
@@ -31,9 +39,9 @@ mixin modals(id)
       h4 Introduction
       p.
         Initié en 2011 par le Von Karman Institute, le projet QB50 vise à 
-        lancer un essaim de 50 cubesat autour de la Terre. Libéré à 380 km 
+        lancer un essaim de 50 cubesats autour de la Terre. Libéré à 380 km 
         d'altitude, ils étudieront la couche inférieure de la thermosphère. 
-        X-CubeSat (de l'école Polytechnique) et SpaceCube (MINES ParisTech) 
+        X-CubeSat (de l'École Polytechnique) et SpaceCube (de l'école des MINES ParisTech) 
         sont deux cubesat du projet QB50. Ils ont été mis en orbite en mai 
         2017 et mesure actuellement la concentration en oxygène monoatomique 
         dans la thermosphère à l'aide d'une sonde FIPEX fournie 
@@ -69,9 +77,10 @@ mixin modals(id)
       h4 Ma contribution
       p.
         Réalisation d’un prototype de caméra spatiale: 
-        Conception du PCB suportant le capteur d’image avec Altium Designer; 
+        Conception du PCB supportant le capteur d’image avec Altium Designer; 
         Programmation d’un FPGA (Cyclone II d’Altera) en co-design VHDL/C++ dialoguant avec le capteur
-        Réalisation d’une interface de récupération des informations récupéré du capteur sur ordinateur
+        Réalisation sur ordinateur d’une interface de récupération des 
+        informations collectées par le capteur 
       p Implémentation de script de test en Python
       
     when "osm"
@@ -83,13 +92,15 @@ mixin modals(id)
       p Bibliothéque: libsdl2, libxml2
       p Logiciel: Git, Make, GCC, GDB
       h4 Le projet
-      p OpenStreetMap Render est une application permettant de visualiser 
-        | les cartes disponible dans la base de donnée libre d'OpenStreetMap. 
-        | Cette application prend en entrée une carte sous format OSM XML puis 
-        | l'affiche avec tous les élements reconnus par l'application 
-        | comme par exemple les routes, bâtiments, forêt 
-        | ainsi que les icones associers lieux particulier.
-
+      p.
+        OpenStreetMap (OSM) est un projet collaboratif dont le but est de créer 
+        une carte libre du monde. L’application OpenStreeMap Render permet 
+        d’obtenir un rendu graphique des données brutes (format XML) mis 
+        à disposition par OpenStreeMap.
+        
+        Avec cette application, il est possible de visualiser des routes, 
+        des rivières, des bâtiments complexes ainsi qu’un grand nombre de 
+        lieux remarquables par des icônes.
 
     when "ariane6"
       p Stage de développement Python
@@ -128,12 +139,12 @@ mixin modals(id)
       p Bibliothéque: JavaFX
       h4 Le projet
       p.
-        Vempiros est un jeu de type « shoot them up » dans lequel le 
-        joueur dirige un pistolero charger de tuer des vampires. <br/>
+        Pistolero vs Vampiros est un jeu de type « shoot them up » dans lequel le 
+        joueur dirige un pistolero chargé de tuer des vampires. <br/>
         Les règles sont simples: 
       ul 
         li.
-          Le pistolero tire des balle d’argent face à lui, si cette balle touche 
+          Le pistolero tire des balles d’argent face à lui, si cette balle touche 
           un vampire, celui-ci disparaît.
         li.
           Les vampires mordent le pistolero quand ils entrent en collision 
@@ -150,13 +161,13 @@ mixin modals(id)
       p Avril - Juin 2017
       p Theme: Bibliothèque système
       p Langage: C
-      p Environnement: GNU/Linux
-      p Logiciel: VisualStudio
+      p Environnement: GNU/Linux, 
+      p Logiciel: Git, GCC, Make, Atom
       h4 Le projet
       p.
         Le conduit de mémoire partagée est une primitive de communication 
         entre processus par flots d’octets. 
-        La structure d’un conduit est semblable à un pipe, il peux être nommé 
+        La structure d’un conduit est semblable à un pipe, il peut être nommé 
         ou anonyme mais a des propriétés d’atomicité différentes. 
         De plus, un conduit manipule une zone de mémoire partagée, 
         ce qui ne requière pas d’appel systèmes (sauf dans le cas bloquant) 
@@ -241,9 +252,9 @@ mixin modals(id)
       p Logiciel: Git, GCC, Make
       h4 Le projet
       p.
-        Conception d'une base de données relationnelle en C avec la plupart des 
+        Conception d'une base de données relationnelle en C avec la plupart 
         des mécanismes de jointure: natural join, merge join et hash join.
-        L'implémentation des jointure fonctionne à la fois en mémoire 
+        L'implémentation des jointures fonctionne à la fois en mémoire 
         et sur disque.
       
     when "robot-lego"
@@ -254,8 +265,10 @@ mixin modals(id)
       p Logiciel: Git, GCC (avec cross compilation), Make
       h4 Le projet
       p.
-        Robot suiveur de ligne conçu dans le cadre d'une compétition interne 
-        de l'université Paris Diderot. La spécificité de ce robot par rapport 
-        aux autres de la compétition est qu'il est le seul à avoir été 
-        développé en C++ et au plus proche du système.
-      
+        Robot suiveur de ligne conçue dans le cadre d'une compétition interne 
+        de l'université Paris Diderot. L'environnement EV3 est généralement 
+        manipulé avec des logiciels et bibliothèques offrant un fort degrés 
+        d'abstraction. Dans ce projet nous avons fait le choix de
+        développer au plus proche du système afin d'obtenir la 
+        meilleure réactivité possible.
+        
