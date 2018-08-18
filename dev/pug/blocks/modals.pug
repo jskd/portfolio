@@ -29,20 +29,23 @@ mixin modals(id)
       p Langage: C++
       p Logiciel et bibliothèque: FreeRTOS, Git, Make, GCC (Bare-metal toolchain) et GDB
       h4 Introduction
-      p Initié en 2011 par le Von Karman Institute, le projet QB50 vise à lancer
-        | un essaim de 50 cubesat autour de la Terre. Libéré à 380 km d'altitude, 
-        | ils étudieront la couche inférieure de la thermosphère.
-        | X-CubeSat (de l'école Polytechnique) et SpaceCube (MINES ParisTech) 
-        | sont deux cubesat du projet QB50. Ils ont été mis en orbite en 
-        | mai 2017 et mesure actuellement  la concentration en oxygène 
-        | monoatomique dans la thermosphère à 
-        | l'aide d'une sonde FIPEX fournie par le Von Karman Institute.
+      p.
+        Initié en 2011 par le Von Karman Institute, le projet QB50 vise à 
+        lancer un essaim de 50 cubesat autour de la Terre. Libéré à 380 km 
+        d'altitude, ils étudieront la couche inférieure de la thermosphère. 
+        X-CubeSat (de l'école Polytechnique) et SpaceCube (MINES ParisTech) 
+        sont deux cubesat du projet QB50. Ils ont été mis en orbite en mai 
+        2017 et mesure actuellement la concentration en oxygène monoatomique 
+        dans la thermosphère à l'aide d'une sonde FIPEX fournie 
+        par le Von Karman Institute.
         
       h4 Ma contribution
-      p Implémentation logicielle en C++ du protocole AX.25 permettant de 
-        | transmettre les télémesures du satellite vers la station sol.
-      p Conception d’une interface de test embarqués avec outils de vérification 
-        | de l'état de la mémoire et monitoring des capteurs
+      p.
+        Implémentation logicielle en C++ du protocole AX.25 permettant de 
+        transmettre les télémesures du satellite vers la station sol.
+      p.
+        Conception d’une interface de test embarqués avec outils de 
+        vérification de l'état de la mémoire et monitoring des capteurs
         
     when "eyesat"
       p Stage de développement VHDL et C++
@@ -55,18 +58,20 @@ mixin modals(id)
       p Logiciel: Quartus II, Altium Designer, LabVIEW, Git
       p Technique: Co-Design, test automatisé
       h4 Introduction
-      p EyeSat est un triple cubesat développé par des étudiants pour une 
-        | mission d’astronomie. Ce nanosatellite a pour objectif l’étude de 
-        | la lumière zodiacale, un reflet des rayons du Soleil sur des 
-        | particules de poussière présente dans l’espace interplanétaire.
-        | C’est la première mission dédiée à l’étude de la lumière zodiacale 
-        | qui utilise un capteur d’image couleur CMOS (et non CCD) une 
-        | technologie qui n’a encore jamais été utilisé dans une caméra spatiale embarqué.
+      p.
+        EyeSat est un triple cubesat développé par des étudiants pour une 
+        mission d’astronomie. Ce nanosatellite a pour objectif l’étude de 
+        la lumière zodiacale, un reflet des rayons du Soleil sur des 
+        particules de poussière présente dans l’espace interplanétaire.
+        C’est la première mission dédiée à l’étude de la lumière zodiacale 
+        qui utilise un capteur d’image couleur CMOS (et non CCD) une 
+        technologie qui n’a encore jamais été utilisé dans une caméra spatiale embarqué.
       h4 Ma contribution
-      p Réalisation d’un prototype de caméra spatiale: 
-        | Conception du PCB suportant le capteur d’image avec Altium Designer; 
-        | Programmation d’un FPGA (Cyclone II d’Altera) en co-design VHDL/C++ dialoguant avec le capteur
-        | Réalisation d’une interface de récupération des informations récupéré du capteur sur ordinateur
+      p.
+        Réalisation d’un prototype de caméra spatiale: 
+        Conception du PCB suportant le capteur d’image avec Altium Designer; 
+        Programmation d’un FPGA (Cyclone II d’Altera) en co-design VHDL/C++ dialoguant avec le capteur
+        Réalisation d’une interface de récupération des informations récupéré du capteur sur ordinateur
       p Implémentation de script de test en Python
       
     when "osm"
@@ -84,3 +89,91 @@ mixin modals(id)
         | l'affiche avec tous les élements reconnus par l'application 
         | comme par exemple les routes, bâtiments, forêt 
         | ainsi que les icones associers lieux particulier.
+
+
+    when "ariane6"
+      p Stage de développement Python
+      p Avril - Septembre 2018
+      p Theme: Application
+      p Environnement: GNU/Linux
+      p Langage: Python
+      p Logiciel: SVN, Jenkins, JIRA
+      h4 Introduction
+      p.
+        Le service de préparation mission d'ArianeGroup utilise de nombreux 
+        outils de nature et d'architecture très variée. Chacun de ces outils 
+        suivent une procédure de validation complexe dont une grande partie 
+        peux être simplifiée avec de l'intégration continue
+        
+      h4 Ma contribution
+      p.
+        Mise en place d'un système de validation automatique complet basé sur 
+        le logiciel d'intégration continue Jenkins et le suivi de ticket JIRA.
+        Ce système de validation repose sur un framework écrit en Python 
+        conçu sur mesure.
+        Modulaire et adaptable, ce framework est capable d'exécuter différents 
+        types de scénarios de validation et permet de tester des 
+        sources en Python, CShell et Fortran.
+        Le système de validation produit des rapports de test, couverture de 
+        code et évalue le style de code (exemple PEP8) et met à jour les 
+        tickets de test dans JIRA.
+        
+    when "vempiro"
+      p Projet universitaire
+      p Avril - Mai 2017
+      p Langage: Java
+      p Environnement: JVM
+      p Logiciel: IntelliJ IDEA, OmniGraffe
+      p Bibliothéque: JavaFX
+      h4 Le projet
+      p.
+        Vempiros est un jeu de type « shoot them up » dans lequel le 
+        joueur dirige un pistolero charger de tuer des vampires. <br/>
+        Les règles sont simples: 
+      ul 
+        li.
+          Le pistolero tire des balle d’argent face à lui, si cette balle touche 
+          un vampire, celui-ci disparaît.
+        li.
+          Les vampires mordent le pistolero quand ils entrent en collision 
+          avec lui. Chaque morsure affaiblit le pistolero et la troisième est 
+          mortelle. 
+        li.
+          La rencontre d’un vampires mâle et femelle provoque la naissance 
+          d’un nouveau vampire.
+        li.
+          Lorsque deux vampires mâles se rencontrent, l’un deux meurt.
+
+    when "conduit"
+      p Projet universitaire
+      p Avril - Juin 2017
+      p Langage: C
+      p Environnement: GNU/Linux
+      p Logiciel: VisualStudio
+      h4 Le projet
+      p.
+        Le conduit de mémoire partagée est une primitive de communication 
+        entre processus par flots d’octets. 
+        La structure d’un conduit est semblable à un pipe, il peux être nommé 
+        ou anonyme mais a des propriétés d’atomicité différentes. 
+        De plus, un conduit manipule une zone de mémoire partagée, 
+        ce qui ne requière pas d’appel systèmes (sauf dans le cas bloquant) 
+        ce qui rend cette structure plus efficaces que des pipes ou des sockets. 
+
+    when "lsf"
+      p Projet personnel
+      p Mars - Avril 2015
+      p Langage: C#, XAML
+      p Environnement: Windows 8.1 et 10 (Tablette, mobile et PC)
+      h4 Le projet
+      p.
+        Construite comme un dictionnaire, cette application vous permet de 
+        découvrir et d’apprendre la Langue des Signes Française (LSF).
+        Accessible sans connexion internet et compatible sur tout 
+        appareil Windows (à partir de 8.1), vous pourrez l’emporter 
+        n’importe où. Ce dictionnaire possède plus de 800 signes 
+        interprétés par des acteurs en Langue des Signes Française. 
+        L’accès aux signes est rapide, grâce à l’accès alphabétique ou 
+        par thème et aux outils de recherche. L’interface donne 
+        accès à la vidéo du signe, à son contraire, aux signes 
+        à ne pas confondre ainsi qu’à une description détaillée. 
