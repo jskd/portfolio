@@ -6,6 +6,11 @@
       "title": "Ariane 6 - Automatisation du processus de préparation des missions"
     },
     {
+      "id": "cards",
+      "vignette": "static/images/projects/cards.jpg",
+      "title": "Cards Save Humanity"
+    },
+    {
       "id": "vempiro",
       "vignette": "static/images/projects/vempiro.jpg",
       "title": "Pistolero vs Vampiros"
@@ -16,14 +21,14 @@
       "title": "QB50 (X-CubeSat et SpaceCube)"
     },
     {
+      "id": "reseau-neurones",
+      "vignette": "static/images/projects/reseau-neurones.jpg",
+      "title": "Réseau de neurones - classificateur d'image"
+    },
+    {
       "id": "eyesat",
       "vignette": "static/images/projects/eyesat.jpg",
       "title": "EyeSat"
-    },
-    {
-      "id": "igosat",
-      "vignette": "static/images/projects/igosat.jpg",
-      "title": "IGOSat"
     },
     {
       "id": "osm",
@@ -41,19 +46,14 @@
       "title": "Dictionnaire de la Langue des Signe Française (LSF)"
     },
     {
-      "id": "cards",
-      "vignette": "static/images/projects/cards.jpg",
-      "title": "Cards Save Humanity"
-    },
-    {
       "id": "bdd",
       "vignette": "static/images/projects/bdd.jpg",
       "title": "Base de donnée en C"
     },
     {
-      "id": "reseau-neurones",
-      "vignette": "static/images/projects/reseau-neurones.jpg",
-      "title": "Réseau de neurones - classificateur d'image"
+      "id": "igosat",
+      "vignette": "static/images/projects/igosat.jpg",
+      "title": "IGOSat"
     },
     {
       "id": "robot-lego",
