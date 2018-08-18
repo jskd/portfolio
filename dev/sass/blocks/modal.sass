@@ -27,6 +27,52 @@
       & ul
         padding-left: 18px
 
+
+
+      & header
+        margin: 0 0 18px 0
+        font-weight: lighter
+
+
+      & .activity
+        font-family: $font-sans
+        margin: 0 0 18px 0
+
+        & .title
+          font-weight: bolder
+          float: left
+          width: 70%
+
+
+        & .date
+          text-align: right
+
+        @media screen and (max-width: 692px)
+          & .title, & .date
+            width: 100%
+            float: none
+            text-align: left
+
+      & ul.tags
+        padding-left: 0
+        font-size: 14px
+        margin: 1px 0
+
+        & li
+          display: inline-block
+          margin-left: 3px
+          border: 1px solid #ccc
+          border-radius: 4px
+          padding: 1px
+
+        & :first-child
+          margin-left: 0
+          font-style: italic
+          width: 100px
+          border: 0
+
+
+
 .iziModal-navigate
   button
     opacity: .5

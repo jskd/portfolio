@@ -1,8 +1,11 @@
 mixin modals(id)
   case id
     when "igosat"
-      p Collaboration bénévole développement C
-      p Juin - Juillet 2017
+      header
+        div.activity
+          div.title Collaboration bénévole développement C
+          div.date Juin - Juillet 2017
+        
       p Theme: Systéme embarqué
       p Environnement: STM32F4xx (ARM Cortex-M4)
       p Langage: C
@@ -30,8 +33,11 @@ mixin modals(id)
       p Soutiens du développement logiciel de vol d'IGOSat
     
     when "qb50"
-      p Stage de développement C++
-      p Avril - Juillet 2015
+      header
+        div.activity
+          div.title Stage de développement C++
+          div.date Avril - Juillet 2015
+
       p Theme: Systéme embarqué
       p Environnement: STM32F4xx (ARM Cortex-M4)
       p Langage: C++
@@ -55,11 +61,16 @@ mixin modals(id)
         Conception d’une interface de test embarqués avec outils de 
         vérification de l'état de la mémoire et monitoring des capteurs
         
-    when "eyesat"
-      p Stage de développement VHDL et C++
-      p Avril - Juillet 2016
-      p Projet universitaire
-      p Octobre 2014 - Avril 2015
+    when "eyesat"  
+      header
+        div.activity
+          div.title Stage de développement VHDL et C++
+          div.date Avril - Juillet 2016
+          
+        div.activity
+          div.title Projet universitaire
+          div.date Octobre 2014 - Avril 2015
+
       p Theme: Electronique et Systéme embarqué
       p Environnement: FPGA (Cyclone II d'Altera)
       p Langage: VHDL, Verilog, C++, Python 
@@ -84,13 +95,35 @@ mixin modals(id)
       p Implémentation de script de test en Python
       
     when "osm"
-      p Projet universitaire
-      p Janvier 2016 - Avril 2016
-      p Theme: Application
-      p Environnement: GNU/Linux
-      p Langage: C
-      p Bibliothéque: libsdl2, libxml2
-      p Logiciel: Git, Make, GCC, GDB
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Janvier 2016 - Avril 2016
+          
+        ul.tags
+          li Theme
+          li Application
+        
+        ul.tags
+          li Environnement
+          li GNU/Linux
+        
+        ul.tags
+          li Langage
+          li C
+          
+        ul.tags
+          li Bibliothéque
+          li libsdl2
+          li libxml2
+        
+        ul.tags
+          li Logiciel
+          li Git
+          li Make
+          li GCC
+          li GDB
+            
       h4 Le projet
       p.
         OpenStreetMap (OSM) est un projet collaboratif dont le but est de créer 
@@ -103,12 +136,29 @@ mixin modals(id)
         lieux remarquables par des icônes.
 
     when "ariane6"
-      p Stage de développement Python
-      p Avril - Septembre 2018
-      p Theme: Application
-      p Environnement: GNU/Linux
-      p Langage: Python
-      p Logiciel: SVN, Jenkins, JIRA
+      header
+        div.activity 
+          div.title Stage de développement Python
+          div.date Avril - Septembre 2018
+        
+        ul.tags
+          li Theme
+          li Application
+
+        ul.tags 
+          li Environnement
+          li GNU/Linux
+          
+        ul.tags  
+          li Langage
+          li Python
+          
+        ul.tags 
+          li Logiciel
+          li SVN
+          li Jenkins
+          li JIRA
+      
       h4 Introduction
       p.
         Le service de préparation des missions d'ArianeGroup utilise de nombreux 
@@ -129,9 +179,12 @@ mixin modals(id)
         code et évalue le style de code (exemple PEP8) et met à jour les 
         tickets de test dans JIRA.
         
-    when "vempiro"
-      p Projet universitaire
-      p Avril - Mai 2017
+    when "vempiro"  
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Avril - Mai 2017
+
       p Theme: Application
       p Langage: Java
       p Environnement: GNU/Linu
@@ -157,8 +210,11 @@ mixin modals(id)
           Lorsque deux vampires mâles se rencontrent, l’un deux meurt.
 
     when "conduit"
-      p Projet universitaire
-      p Avril - Juin 2017
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Avril - Juin 2017
+
       p Theme: Bibliothèque système
       p Langage: C
       p Environnement: GNU/Linux, 
@@ -174,8 +230,11 @@ mixin modals(id)
         ce qui rend cette structure plus efficaces que des pipes ou des sockets. 
 
     when "lsf"
-      p Projet personnel
-      p Mars - Avril 2015
+      header
+        div.activity
+          div.title Projet personnel
+          div.date Mars - Avril 2015
+
       p Theme: Application multiplate-forme
       p Langage: C#, XAML
       p Environnement: Windows 8.1 et 10 (Tablette, mobile et PC)
@@ -193,8 +252,11 @@ mixin modals(id)
         à ne pas confondre ainsi qu’à une description détaillée. 
         
     when "cards"
-      p Hackathon et projet personnel
-      p Juin 2018 à aujourd'hui
+      header
+        div.activity
+          div.title Hackathon et projet personnel
+          div.date Juin 2018 à aujourd'hui
+
       p Theme: Application mobile
       p Environnement: Android
       p Langage: Kotlin
@@ -219,8 +281,11 @@ mixin modals(id)
         Classement : Finaliste
       
     when "reseau-neurones"
-      p Projet universitaire
-      p Octobre - Decembre 2017
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Octobre - Decembre 2017
+
       p Theme: Machine learning
       p Langage: Python
       p Bibliothèque: Tensorflow, OpenCV
@@ -244,8 +309,11 @@ mixin modals(id)
         leurs nombre avec des processus de data augmentation.
       
     when "bdd"
-      p Projet universitaire
-      p Octobre - Decembre 2017
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Octobre - Decembre 2017
+
       p Theme: Application
       p Environnement: GNU/Linux
       p Langage: C
@@ -258,8 +326,11 @@ mixin modals(id)
         et sur disque.
       
     when "robot-lego"
-      p Projet universitaire
-      p Septembre 2017 - Mai 2018
+      header
+        div.activity
+          div.title Projet universitaire
+          div.date Septembre 2017 - Mai 2018
+
       p Environnement: LEGO MINDSTORMS EV3 (basé sur Debian jessie)
       p Langage: C++
       p Logiciel: Git, GCC (avec cross compilation), Make
