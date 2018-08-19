@@ -1,11 +1,7 @@
-# Portfolio one page template - ARCHIVED
+# Jérôme Skoda Portfolio
 
-Flat and responsive website template, designed and coded by [Maxim Orlov](https://github.com/orlovmax). 
-
-Demo: [http://website-templates.github.io/portfolio_one-page-template](http://website-templates.github.io/portfolio_one-page-template/)
-
-![Mockup demo](screenshots/pic.jpg)
-Product mockup created with [http://magicmockups.com/](http://magicmockups.com/)
+Based on [https://github.com/website-templates/portfolio_one-page-template](portfolio template) by [Maxim Orlov](https://github.com/orlovmax).
+Demo: [https://jeromeskoda.fr](https://jeromeskoda.fr)
 
 ## Contents
 * [Folder structure](#folder-and-file-structure)
@@ -100,13 +96,13 @@ Product mockup created with [http://magicmockups.com/](http://magicmockups.com/)
 This project have .editorconfig file at the root that used by your code editor with editorconfig plugin. It describes codestyle like indent style, trailing whitespaces etc. See more details [here](http://editorconfig.org/)
 
 ## Site configuration
-This boilerplate use Pug templates with external data configs. 
+This boilerplate use Pug templates with external data configs.
 Main settings can be found in `dev/data/config.json` file. And they're available for usage in templates with `config.key-name`
 
 ## Tasks
 Here comes groups of gulp tasks with some explanations
 
-#### Start 
+#### Start
 Install bower dependencies and place them to dev folders.
 Gulp: `gulp start`
 
@@ -125,11 +121,11 @@ Gulp: `gulp dev`
 * Compile Pug templates
 * Sync helpers and other assets
 * Sync images
-* Run BrowserSync static server with live reload using 
+* Run BrowserSync static server with live reload using
 * Watch for changes and run dev task
 
 
-#### Build 
+#### Build
 Build task.
 Gulp: `gulp build`
 
@@ -137,10 +133,10 @@ Gulp: `gulp build`
 * Minify javascript files
 * Minify stylesheets
 * Minify html
-* Run BrowserSync static server 
+* Run BrowserSync static server
 
 
-#### Rebuild 
+#### Rebuild
 Regenerate and build project by running all tasks.
 Gulp: `gulp rebuild`
 
@@ -156,13 +152,13 @@ Gulp: `gulp rebuild`
 * Minify stylesheets
 * Minify html
 
-#### Server 
+#### Server
 Run server without watching for changes.
 Gulp: `gulp server`
 
 * Run BrowserSync static server
 
-## Live reload 
+## Live reload
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
