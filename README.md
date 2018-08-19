@@ -1,6 +1,9 @@
 # Jérôme Skoda Portfolio
 
 Based on [portfolio template](https://github.com/website-templates/portfolio_one-page-template) by [Maxim Orlov](https://github.com/orlovmax).
+
+![alt text](dev/img_original/readme-screen.png)
+
 Demo: [https://jeromeskoda.fr](https://jeromeskoda.fr)
 
 ## Contents
