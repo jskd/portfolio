@@ -4,14 +4,15 @@
 
     # Force HTTPS
     RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301]
 
     # Remove www
     RewriteCond %{HTTPS} ^www.
-    RewriteRule . / [R=301,L]
+    RewriteRule ^(.*)$ / [R=301]
 
     # Redirect to main page
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule . / [R=301,L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ / [R=301]
 
 </ifModule>
